@@ -6,11 +6,9 @@ Stylesheet converts sitemap to FMPXMLRESULT
 
 This is an XSLT stylesheet to convert from FileMaker's fmpxmlresult to sitemap and vice-versa.
 
-
-
-## Below is from one of my other FMPXMLRESULT XSLT tools; I may or may not update eventually to make a reasonable example.
-
 Note adding a layout name in the FMPXMLRESULT export; before translating using this XSLT, will make the output more complete.
+
+Adding a layout name the easy way:
 
 <img alt="[x] Format Using Layout will provoke the export to populate the LAYOUT-attribute" src="FormatUsingLayout.png" width="100%" max-width=1008>
 
