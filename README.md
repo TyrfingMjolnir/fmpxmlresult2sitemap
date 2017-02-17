@@ -10,7 +10,7 @@ Note adding a layout name in the FMPXMLRESULT export; before translating using t
 
 Adding a layout name the easy way:
 
-<img alt="[x] Format Using Layout will provoke the export to populate the LAYOUT-attribute" src="FormatUsingLayout.png" width="100%" max-width=1008>
+<img alt="[x] Format Using Layout will provoke the export to populate the LAYOUT-attribute" src="https://github.com/TyrfingMjolnir/fmpxmlresult2nodeexpress/blob/master/FormatUsingLayout.png" width="100%" max-width=1008>
 
 How to use this file in terminal
 ---
