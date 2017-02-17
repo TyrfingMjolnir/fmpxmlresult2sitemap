@@ -16,6 +16,8 @@ How to use this file in terminal
 ---
 ```bash
 $ xsltproc fmpxmlresult2sitemap.xslt www.domain.tld.fmpxmlresult.xml > /www/tld.domain.www/sitemap.xml
+```
+```bash
 $ xsltproc sitemap2fmpxmlresult.xslt http://www.domain.tld/sitemap.xml > www.domain.tld.fmpxmlresult.xml
 ```
 Note the latter will not work in FileMaker if the source is async.
