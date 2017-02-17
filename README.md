@@ -28,71 +28,89 @@ If you do not like the verbs used for the calls you can have a look [here](http:
 
 Sample files
 ---
-test.xml
+www.domain.tld.fmpxmlresult.xml
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
-<ERRORCODE>0</ERRORCODE>
-<PRODUCT BUILD="07-18-2011" NAME="FileMaker" VERSION="ProAdvanced 11.0v4"/>
-<DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="view" NAME="schema.table" RECORDS="0" TIMEFORMAT="k:mm:ss"/>
-<METADATA>
-  <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="vintage" TYPE="NUMBER"/>
-  <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="wine" TYPE="TEXT"/>
-  <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="wine2" TYPE="TEXT"/>
-</METADATA>
-<RESULTSET FOUND="0">
-  <ROW MODID="0" RECORDID="0">
-    <COL>
-      <DATA>2008</DATA>
-    </COL>
-    <COL>
-      <DATA>Sjattonoeff</DATA>
-    </COL>
-    <COL>
-      <DATA>Sjattonoeff</DATA>
-    </COL>
-  </ROW>
-</RESULTSET>
+  <ERRORCODE>0</ERRORCODE>
+  <PRODUCT BUILD="" NAME="" VERSION=""/>
+  <DATABASE DATEFORMAT="M/d/yyyy" LAYOUT="" NAME="" RECORDS="1" TIMEFORMAT="h:mm:ss a"/>
+  <METADATA>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="loc" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="lastmod" TYPE="TIMESTAMP"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="changefreq" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="priority" TYPE="NUMBER"/>
+  </METADATA>
+  <RESULTSET FOUND="20467">
+    <ROW MODID="0" RECORDID="1">
+      <COL>
+        <DATA>http://www.domain.tld</DATA>
+      </COL>
+      <COL>
+        <DATA>2017-02-17</DATA>
+      </COL>
+      <COL>
+        <DATA>always</DATA>
+      </COL>
+      <COL>
+        <DATA>1.0</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="2">
+      <COL>
+        <DATA>http://www.domain.tld/shop/location2</DATA>
+      </COL>
+      <COL>
+        <DATA>2017-02-17</DATA>
+      </COL>
+      <COL>
+        <DATA>monthly</DATA>
+      </COL>
+      <COL>
+        <DATA>0.5</DATA>
+      </COL>
+    </ROW>
+    <ROW MODID="0" RECORDID="3">
+      <COL>
+        <DATA>http://www.domain.tld/shop/location3</DATA>
+      </COL>
+      <COL>
+        <DATA>2017-02-17</DATA>
+      </COL>
+      <COL>
+        <DATA>monthly</DATA>
+      </COL>
+      <COL>
+        <DATA>0.5</DATA>
+      </COL>
+    </ROW>
+  </RESULTSET>
 </FMPXMLRESULT>
 ```
 
-~/projectname/route/view.js
-
-```js
-const
-  express = require( 'express' ),
-  router  = express.Router();
-
-// CRUD for the node named: view
-
-// C reate
-router.post( '/view/:vintage/:wine/:wine2', function( req, res ) {
-  res.send( req.params.vintage );
-  res.send( req.params.wine );
-  res.send( req.params.wine2 );
-});
-
-// R ead
-router.get( '/view/:vintage/:wine/:wine2', function( req, res ) {
-  res.send( req.params.vintage );
-  res.send( req.params.wine );
-  res.send( req.params.wine2 );
-});
-
-// U pdate
-//router.patch( '/view/:vintage/:wine/:wine2', function( req, res ) {
-router.put( '/view/:vintage/:wine/:wine2', function( req, res ) {
-  res.send( req.params.vintage );
-  res.send( req.params.wine );
-  res.send( req.params.wine2 );
-});
-
-// D elete
-router.delete( '/view/:vintage/:wine/:wine2', function( req, res ) {
-  res.send( req.params.vintage );
-  res.send( req.params.wine );
-  res.send( req.params.wine2 );
-});
+/www/tld.domain.www/sitemap.xml
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.scandinavianphoto.no</loc>
+    <lastmod>2017-02-17</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.scandinavianphoto.no/butikk/BANKERYD</loc>
+    <lastmod>2017-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.scandinavianphoto.no/butikk/MOLNDAL</loc>
+    <lastmod>2017-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
 ```
 
 License
