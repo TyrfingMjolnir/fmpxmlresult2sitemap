@@ -93,19 +93,19 @@ www.domain.tld.fmpxmlresult.xml
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.google.com/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.scandinavianphoto.no</loc>
+    <loc>http://www.domain.tld</loc>
     <lastmod>2017-02-17</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://www.scandinavianphoto.no/butikk/BANKERYD</loc>
+    <loc>http://www.domain.tld/shop/location2</loc>
     <lastmod>2017-02-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.scandinavianphoto.no/butikk/MOLNDAL</loc>
+    <loc>http://www.domain.tld/shop/location3</loc>
     <lastmod>2017-02-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
