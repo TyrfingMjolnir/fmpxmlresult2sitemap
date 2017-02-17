@@ -34,14 +34,14 @@ www.domain.tld.fmpxmlresult.xml
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
   <PRODUCT BUILD="" NAME="" VERSION=""/>
-  <DATABASE DATEFORMAT="M/d/yyyy" LAYOUT="" NAME="" RECORDS="1" TIMEFORMAT="h:mm:ss a"/>
+  <DATABASE DATEFORMAT="M/d/yyyy" LAYOUT="" NAME="" RECORDS="3" TIMEFORMAT="h:mm:ss a"/>
   <METADATA>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="loc" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="lastmod" TYPE="TIMESTAMP"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="changefreq" TYPE="TEXT"/>
     <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="priority" TYPE="NUMBER"/>
   </METADATA>
-  <RESULTSET FOUND="20467">
+  <RESULTSET FOUND="3">
     <ROW MODID="0" RECORDID="1">
       <COL>
         <DATA>http://www.domain.tld</DATA>
