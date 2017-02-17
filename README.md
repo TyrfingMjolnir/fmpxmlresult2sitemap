@@ -17,8 +17,10 @@ Note adding a layout name in the FMPXMLRESULT export; before translating using t
 How to use this file in terminal
 ---
 ```bash
-$ xsltproc fmpxmlresult2nodeexpress.xslt test.xml > ~/projectname/route/view.js
+$ xsltproc fmpxmlresult2sitemap.xslt www.domain.tld.fmpxmlresult.xml > /www/tld.domain.www/sitemap.xml
+$ xsltproc sitemap2fmpxmlresult.xslt http://www.domain.tld/sitemap.xml > www.domain.tld.fmpxmlresult.xml
 ```
+Note the latter will not work in FileMaker if the source is async.
 
 For using this in FileMaker use File -> Export Records use filetype XML and point to the raw file on github for the [XSLT](https://raw.githubusercontent.com/TyrfingMjolnir/fmpxmlresult2nodeexpress/master/fmpxmlresult2nodeexpress.xslt)
 
